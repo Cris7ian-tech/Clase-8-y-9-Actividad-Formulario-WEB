@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 8 y 9: Actividad a entregar Formulario.</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    
+    <h2>Bienvenido al Formulario correspondiente a la clase 8 y 9.</h2>
+
+    <form class="contenedor" action="https://formsubmit.co/cristianlucero.ala2@gmail.com"
+    method="post">
+
+    <div class="datos">
+
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" placeholder="Ingrese su nombre: " required>
+    <br><br>
+    
+        <label for="apallido">Apelllido: </label>
+        <input type="text" name="apellido" placeholder="Ingrese su apellido" required>
+    <br><br>
+    
+        <label for="mail">Direccion de correo: </label>
+        <input type="email" name="mail" placeholder="Su correo@mail.com" required>
+    <br><br>
+    
+        <label for="contraseña">Contraseña: </label>
+        <input type="password" name="contraseña" placeholder="Ingrese su contraseña">
+    <br><br>
+    
+        <label for="intro">Profesor que pone musica antes de la clase: </label>
+        <select id="intro" name="intro">
+            
+            <option class="profe" value="jean larez">Jean Larez</option>
+            <option class="profe" value="luciano moyano">Luciano Moyano</option>
+            <option class="profe" value="florencia nieva">Florencia Nieva </option>
+            <option class="profe" value="Mathias Barbosa">Mathias Barbosa</option>
+        </select>
+    <br><br>
+
+    </div>
+
+
+    <div class="radio">
+
+        <h4 class="genero">Genero</h4>
+        <br>
+        <label for="hombre">Hombre</label>
+        <input type="radio" name="genero" id="hombre" value="hombre" required>
+    
+        <label for="mujer">Mujer</label>
+        <input type="radio" name="genero" id="mujer" value="mujer" required>
+    
+        <label for="otro">Otro</label>
+        <input type="radio" name="genero" id="otro" value="otro" required>
+    </div>
+<br><br>
+
+    <div class="check">
+        <label for="bases">Acepto bases y condiciones</label>
+        <input type="checkbox" name="bases" id="bases" value="aceptaa" required>
+    </div>
+<br><br>
+
+<label class="textarea" for="comentarios">Comenta tus dudas o sugerencias: </label>
+<textarea name="comentarios" rows="15" cols="60" placeholder="Tus comentarios o sugerencias..."></textarea>
+
+<div class="enviar">
+
+    <input class="submit" type="submit" value="Enviar">
+
+</div>
+
+</form>
+<br>
+</body>
+</html>
